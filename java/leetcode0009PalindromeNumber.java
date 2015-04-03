@@ -1,4 +1,4 @@
-/***********************Question*************************
+/* **********************Question*************************
  * Determine whether an integer is a palindrome. Do this without extra space.
  * Some hints:
  * Could negative integers be palindromes? (ie, -1)
@@ -7,12 +7,12 @@
  * However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. 
  * How would you handle such case?
  * There is a more generic way of solving this problem.
- *********************************************************/
+ * ********************************************************/
 
-/**
+/* *
  * @author Horst Xu
  * @date 2015-04-03
- */
+ * */
 public class Solution {
     public boolean isPalindrome(int x) {
         int reverse = 0;
