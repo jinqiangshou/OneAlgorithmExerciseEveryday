@@ -12,8 +12,11 @@
 /* *
  * @author Horst Xu
  * @date 2015-04-03
+ * @desc I supplied two solutions for this problem. 
+ *       The second solution is better because Solution1 reversed the integer,
+ *       which might overflow. However, both solutions passed online judge.
  * */
-public class Solution {
+public class Solution1 {
     public boolean isPalindrome(int x) {
         int reverse = 0;
         int tempX = x;
@@ -25,5 +28,39 @@ public class Solution {
             return true;
         }
         return false;
+    }
+}
+
+/* *
+ * @author Horst Xu
+ * @date 2015-04-03
+ * @desc This is a better solution because it's impossible to overflow.
+ * */
+public class Solution2 {
+    public boolean isPalindrome(int x) {
+        if(x < 0){ 
+            return false; 
+        }else if(x < 10){ 
+            return true; 
+        }
+        
+        int tempX = x/10;
+        int highorder = 1;
+        while(tempX > 0){
+            highorder *= 10;
+            tempX /= 10;
+        }
+        
+        tempX=x;
+        while(highorder > 0){
+            if(tempX / highorder != tempX % 10)
+            {
+                return false;
+            }
+            tempX %= highorder;
+            tempX /= 10;
+            highorder /= 100;
+        }
+        return true;
     }
 }
