@@ -24,10 +24,10 @@
 class Solution {
 public:
     bool isMatch(const char *s, const char *p) {
-        int plen = strlen(p);
+      int plen = strlen(p);
     	int slen = strlen(s);
     	if(plen == 0){
-    		return (slen == 0);
+    	  return (slen == 0);
     	}
     	if(plen == 1){
     		return (slen == 1 && (s[0] == p[0] || p[0]=='.'));
