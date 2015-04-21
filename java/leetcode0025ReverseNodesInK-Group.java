@@ -24,15 +24,15 @@
  */
 public class Solution {
 	public ListNode reverseKGroup(ListNode head, int k) {
-        int len = 0;
-        ListNode headbp = head;
-        while(headbp != null){
-            len++;
-            headbp = headbp.next;
-        } 
-		if(len < 2){return head;}
+            int len = 0;
+            ListNode headbp = head;
+            while(headbp != null){
+                len++;
+                headbp = headbp.next;
+            } 
+	    if(len < 2){return head;}
 		
-		int reverseTimes = (len / k);
+	    int reverseTimes = (len / k);
 		
 	    ListNode myhead = new ListNode(0);
 	    myhead.next = head;
