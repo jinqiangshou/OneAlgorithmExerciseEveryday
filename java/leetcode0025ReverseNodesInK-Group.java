@@ -59,5 +59,5 @@ public class Solution {
 	        curr = rtail;
 	    }
 	    return myhead.next;
-    }
+	}
 }
