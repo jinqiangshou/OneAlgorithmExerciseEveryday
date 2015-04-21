@@ -29,7 +29,7 @@ public class Solution {
 		while(headbp != null){
 			len++;
 			headbp = headbp.next;
-		}
+		} 
 		if(len < 2){return head;}
 		
 		int reverseTimes = (len / k);
