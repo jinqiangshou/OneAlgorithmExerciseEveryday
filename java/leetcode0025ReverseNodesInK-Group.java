@@ -23,8 +23,8 @@
  * }
  */
 public class Solution {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        int len = 0;
+	public ListNode reverseKGroup(ListNode head, int k) {
+    	int len = 0;
 		ListNode headbp = head;
 		while(headbp != null){
 			len++;
