@@ -15,7 +15,7 @@
 class Solution {
 public:
     vector<int> searchRange(int A[], int n, int target) {
-      vector<int> result;
+        vector<int> result;
     	int maxpos = -1, minpos = -1;
     	int start = 0;
     	int end = n-1;
