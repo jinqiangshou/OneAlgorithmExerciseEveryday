@@ -15,9 +15,9 @@
  */
 int jump(int* nums, int numsSize) {
     if(numsSize == 0 || numsSize == 1){
-		return 0;
-	}
-	int result = 0;
+        return 0;
+    }
+    int result = 0;
     int longest = 0;
     int maxPos = 0;
     for(int i=0; i<numsSize-1; i++) {
