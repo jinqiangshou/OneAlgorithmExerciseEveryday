@@ -15,6 +15,8 @@
 
 
 /**
+ * @author Horst Xu
+ * @date 2016-04-22
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
